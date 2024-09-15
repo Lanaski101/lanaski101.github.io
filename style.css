@@ -1,100 +1,147 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: sans-serif, Arial, Helvetica;
     margin: 0px;
     font-size: 1.5vw;
+    background-color: white;
 }
 
-#logo {
-    color: white;
-    margin: 0px;
-    padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    width: 16%;
-    text-shadow: 
-    1px 1px 0px black,
-    -1px 1px 0px black,
-    1px -1px 0px black,
-    -1px -1px 0px black;
-}
-
-ul {
-    margin: 0px;
-}
-
-body > header {
-    background-color: orange;
+#main-header {
+    background-color: #A593E0;
     display: flex;
     height: 12vh;
     align-items: center;
-    justify-content: space-around;
-}
-
-#nav-ul {
-    display: flex;
-}
-
-#nav-ul > li {
-    padding: 8px;
-    margin: 16px;
-}
-
-/* #main_header { */
-
-/* } another way to select an element, using id, the one above using direct descendent is commonly used*/
-
-body > header > nav > ul {
-    list-style: none;
-    text-decoration: none;
+    justify-content: space-between;
+    padding: 1rem 0; /* 1rem top and bottom, 0 left and right */
+    border-bottom: 1px solid #d1d5db; /* Light gray bottom border */
 }
 
 .navbutton {
-    color: white;
-    text-decoration: none;
-    padding: 12px;
+    margin: 16px;
     border: 1px solid white;
-    border-radius: 10%;
+    padding: 0.5rem 0.75rem;  /* py-2 for vertical, px-3 for horizontal padding */
+    background-color: #E0E3DA; /* Equivalent to bg-blue-500 */
+    color: black; /* Text color */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    text-decoration: none; /* Removes underline for links */
+    display: inline-block; /* Ensures proper padding behavior */
+}
+
+#logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0px;
+    padding: 8px;
+    width: 16%;
+    font-family: "Fredoka One", Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.custom-container {
+    margin-top: 1rem; /* Equivalent to mt-4 */
+    display: flex; /* Equivalent to flex */
+    gap: 1rem;
+}
+
+.custom-container span {
+    padding: 0.25rem 0.75rem; /* py-1 (top/bottom) and px-3 (left/right) */
+    margin-left: 32px;
+    margin-right: 32px;
+    background-color: #e5e7eb; /* Equivalent to bg-gray-200 */
+    border-radius: 9999px; /* Equivalent to rounded-full (makes it fully rounded) */
+    font-size: 0.875rem; /* Equivalent to text-sm (small text size, 14px) */
+    display: inline-block;
 }
 
 body > main article {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
-#main-content {
+#maincontent {
     display: flex;
     justify-content: space-around;
 }
 
-#main-content > div {
-    width: 70%;
-} /* this is another method to give more width to the aside  */
+#maincontent section {
+    /* margin-top: 8px; */
+    margin: 32px;
+    width: 75%;
+    border: 1px solid black;
+    border-radius: 0.375rem;
+    background-color: #FFFFF3;
+}
 
-form {
+#maincontent > aside p {
+    font-size: small;
+}
+
+section > h4 {
+    text-decoration-line: underline;
     text-align: center;
 }
 
-h2 {
+.small-text {
+    font-size: 0.7rem; /* Small font size */
+    font-style: italic; /* Italicized text */
+    color: darkgray; /* A subtle color change */
+}
+
+header > h1 {
     text-align: center;
+    text-decoration-line: underline;
+    color: #333;
 }
 
-body > footer {
-    background-color: orange;
-    display: flex;
+ #maincontent > div p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
 }
 
-img {
-    border-radius: 50%;
+div > article footer {
+    text-align: right;
 }
 
-#footer-ul {
-    display: flex;
-    list-style: none;
+div > article > footer a {
+    text-decoration-line: none;
+    color: darkblue;
 }
 
-#footer-ul > div > li {
-    margin-left: 12px;
+#forform {
+    text-align: center;
+    background-color: #FFFFF3;
 }
-#footer-ul > div > li > a {
+
+body > footer{
+    background-color: #FFFFF3;
+}
+
+.footer-logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0px;
+    padding: 8px;
+    font-family: "Fredoka One", Helvetica, sans-serif;
     text-decoration: none;
-    color: white;
+}
+
+#foot {
+    display: flex; /* Equivalent to flex */
+    justify-content: right; /* Equivalent to justify-between */
+}
+
+.footlink {
+    margin: 8px;
+    padding: 0.5rem 0.75rem;  /* py-2 for vertical, px-3 for horizontal padding */
+    text-decoration: none; /* Removes underline for links */
+    display: inline-block; /* Ensures proper padding behavior */
+}
+
+hr {
+    margin-bottom: 0px;
+}
+
+#centraltext {
+    text-align: center;
 }
